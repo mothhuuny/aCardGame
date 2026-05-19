@@ -1,5 +1,4 @@
 # aCardGame
-hathune miku
 what we need to set up:
 * godot plugin for git
 * the card system
