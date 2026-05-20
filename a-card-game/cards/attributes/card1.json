@@ -1,0 +1,16 @@
+{
+	"name": "card1",
+	"texture": "card1.png",
+	"type": "none",
+	"health": 1,
+	"points": 1,
+	"abilities": 
+	{
+		"1": 
+		{
+			"name": "ability1",
+			"functionToCall" : "func1"
+		}
+	
+	}
+}
