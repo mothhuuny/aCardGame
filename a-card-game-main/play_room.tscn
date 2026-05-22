@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://dbxgudy6aic0s"]
+
+[ext_resource type="PackedScene" uid="uid://4qdeq45vwmgu" path="res://card.tscn" id="1_l8xdm"]
+[ext_resource type="PackedScene" uid="uid://dy5cleesxw04f" path="res://player_camera.tscn" id="2_8fj7m"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_prhav"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_l8xdm"]
+size = Vector3(1.5, 0.05, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_8fj7m"]
+size = Vector3(0.075, 1, 0.075)
+
+[node name="playRoom" type="Node3D" unique_id=658111795]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1728655837]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.90883327, 0)
+material_override = SubResource("StandardMaterial3D_prhav")
+mesh = SubResource("BoxMesh_l8xdm")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="MeshInstance3D" unique_id=1690176961]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, -0.516, 0.5)
+mesh = SubResource("BoxMesh_8fj7m")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="MeshInstance3D" unique_id=1874306571]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, -0.516, 0.5)
+mesh = SubResource("BoxMesh_8fj7m")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="MeshInstance3D" unique_id=387012662]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, -0.516, -0.5)
+mesh = SubResource("BoxMesh_8fj7m")
+skeleton = NodePath("../MeshInstance3D2")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="MeshInstance3D" unique_id=1274272553]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, -0.516, -0.5)
+mesh = SubResource("BoxMesh_8fj7m")
+
+[node name="Card" parent="." unique_id=1622864 instance=ExtResource("1_l8xdm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.092, 1, 0.7)
+
+[node name="PlayerCamera" parent="." unique_id=1014114674 instance=ExtResource("2_8fj7m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.20996189, 1.9019995, 2.3469384)
