@@ -1,8 +1,0 @@
-[gd_scene format=3 uid="uid://c33i8uqnt2tya"]
-
-[ext_resource type="Script" uid="uid://b125dybkijhir" path="res://card.gd" id="1_kikvd"]
-
-[node name="Card" type="Node2D" unique_id=227898463]
-script = ExtResource("1_kikvd")
-
-[node name="cardTexture" type="Sprite2D" parent="." unique_id=1655331782]
