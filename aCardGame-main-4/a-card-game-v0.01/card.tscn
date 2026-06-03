@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://4qdeq45vwmgu"]
+
+[ext_resource type="Script" uid="uid://b125dybkijhir" path="res://card.gd" id="1_kikvd"]
+[ext_resource type="Texture2D" uid="uid://cmxf6f4r0cr65" path="res://cards/textures/card1.png" id="2_rjlel"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_q5obu"]
+size = Vector3(0.2708435, 0.47631836, 0.010253906)
+
+[node name="Card" type="Node3D" unique_id=1622864]
+script = ExtResource("1_kikvd")
+
+[node name="cardTexture" type="Sprite3D" parent="." unique_id=1510603347]
+transform = Transform3D(0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, 0, 0, 0)
+texture = ExtResource("2_rjlel")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=623766873]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=736411756]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0016326904, -0.010375977, 0.0021972656)
+shape = SubResource("BoxShape3D_q5obu")
