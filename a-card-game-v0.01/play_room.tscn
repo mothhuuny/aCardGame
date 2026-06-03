@@ -28,26 +28,26 @@ sky = SubResource("Sky_8fj7m")
 
 [node name="playRoom" type="Node3D" unique_id=658111795]
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1728655837]
+[node name="tabletop" type="MeshInstance3D" parent="." unique_id=1728655837]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.90883327, 0)
 material_override = SubResource("StandardMaterial3D_prhav")
 mesh = SubResource("BoxMesh_l8xdm")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="MeshInstance3D" unique_id=1690176961]
+[node name="leg1" type="MeshInstance3D" parent="tabletop" unique_id=1690176961]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, -0.516, 0.5)
 mesh = SubResource("BoxMesh_8fj7m")
 
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="MeshInstance3D" unique_id=1874306571]
+[node name="leg2" type="MeshInstance3D" parent="tabletop" unique_id=1874306571]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, -0.516, 0.5)
 mesh = SubResource("BoxMesh_8fj7m")
 skeleton = NodePath("../..")
 
-[node name="MeshInstance3D3" type="MeshInstance3D" parent="MeshInstance3D" unique_id=387012662]
+[node name="leg3" type="MeshInstance3D" parent="tabletop" unique_id=387012662]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, -0.516, -0.5)
 mesh = SubResource("BoxMesh_8fj7m")
-skeleton = NodePath("../MeshInstance3D2")
+skeleton = NodePath("../leg2")
 
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="MeshInstance3D" unique_id=1274272553]
+[node name="leg4" type="MeshInstance3D" parent="tabletop" unique_id=1274272553]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, -0.516, -0.5)
 mesh = SubResource("BoxMesh_8fj7m")
 
