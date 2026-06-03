@@ -5,3 +5,4 @@
 [node name="placeholder" type="Sprite3D" parent="." unique_id=1257799646]
 
 [node name="playerCam" type="Camera3D" parent="." unique_id=640624387]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.0119265)
