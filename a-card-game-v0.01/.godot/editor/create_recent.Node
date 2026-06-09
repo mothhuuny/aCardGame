@@ -1,5 +1,6 @@
+Node3D
+Sprite3D
 CollisionShape3D
 StaticBody3D
 Camera3D
-Sprite3D
 Sprite2D

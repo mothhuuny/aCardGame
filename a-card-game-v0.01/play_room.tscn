@@ -4,6 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://dy5cleesxw04f" path="res://player_camera.tscn" id="2_8fj7m"]
 [ext_resource type="Texture2D" uid="uid://cld4y7te2vbo0" path="res://cardSlot.png" id="3_70n8d"]
 [ext_resource type="Script" uid="uid://dtno0d73dnu28" path="res://phand.gd" id="4_5i12v"]
+[ext_resource type="Texture2D" uid="uid://6uh3ovqgbbsc" path="res://IMG_1364.png" id="5_q1pvb"]
+[ext_resource type="Texture2D" uid="uid://8mfmq4ott43y" path="res://IMG_1365.png" id="6_s8xmp"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_prhav"]
 
@@ -138,5 +140,15 @@ transform = Transform3D(0.02, 0, 0, 0, -8.7422775e-10, -0.02, 0, 0.02, -8.742277
 texture = ExtResource("3_70n8d")
 
 [node name="Phand" type="Node3D" parent="." unique_id=1300204472]
-transform = Transform3D(0.02, 0, 0, 0, -8.7422775e-10, -0.02, 0, 0.02, -8.7422775e-10, 0.19193628, 1.1155494, 0.6335606)
+transform = Transform3D(0.02, 0, 0, 0, 0.019810189, 0.0027488908, 0, -0.0027488908, 0.019810189, 0.11289671, 1.1735928, 0.6335606)
 script = ExtResource("4_5i12v")
+
+[node name="handTexture" type="Node3D" parent="Phand" unique_id=653063978]
+
+[node name="thumb" type="Sprite3D" parent="Phand/handTexture" unique_id=1388670329]
+transform = Transform3D(1.4507487, 1.3767091, 0, -1.3767093, 1.4507489, 0, 1.4901161e-08, -2.9802322e-08, 2.0000002, 3.8260784, -0.96494293, 4.083435)
+texture = ExtResource("6_s8xmp")
+
+[node name="fingers" type="Sprite3D" parent="Phand/handTexture" unique_id=1250235695]
+transform = Transform3D(3, 0, 0, 0, 3.000001, 5.9604645e-08, 0, -5.9604645e-08, 3.000001, 3.8260784, -2.6153908, -2.1509514)
+texture = ExtResource("5_q1pvb")

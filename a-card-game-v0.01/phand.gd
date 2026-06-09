@@ -8,7 +8,7 @@ func _ready() -> void:
 	cardInstance = cardScene.instantiate()
 	add_child(cardInstance)
 	cardInstance.scale = Vector3(1, 1, 1)
-	cardInstance.rotation.x = deg_to_rad(90)
+	cardInstance.rotation.x = deg_to_rad(180)
 	print(cardInstance.global_position)
 
 
