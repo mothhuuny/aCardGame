@@ -55,7 +55,7 @@ mesh = SubResource("BoxMesh_8fj7m")
 transform = Transform3D(1, 0, -3.821371e-15, 3.821371e-15, 4.371139e-08, 1, 0, -1, 4.371139e-08, 0.092, 1, 0.486)
 
 [node name="PlayerCamera" parent="." unique_id=1014114674 instance=ExtResource("2_8fj7m")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.376, 1.0781871)
+transform = Transform3D(1, 0, 0, 0, 0.9799248, 0.19936793, 0, -0.19936796, 0.9799247, 0, 1.376, 1.0781871)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1549313133]
 environment = SubResource("Environment_8fj7m")
