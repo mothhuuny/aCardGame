@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://4qdeq45vwmgu"]
+
+[ext_resource type="Script" uid="uid://b125dybkijhir" path="res://card.gd" id="1_kikvd"]
+
+[node name="Card" type="Node3D" unique_id=1622864]
+script = ExtResource("1_kikvd")
+
+[node name="cardTexture" type="Sprite3D" parent="." unique_id=1510603347]
+transform = Transform3D(0.04, 0, 0, 0, 0.04, 0, 0, 0, 0.04, 0, 0, 0)
