@@ -3,6 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://4qdeq45vwmgu" path="res://card.tscn" id="1_l8xdm"]
 [ext_resource type="PackedScene" uid="uid://dy5cleesxw04f" path="res://player_camera.tscn" id="2_8fj7m"]
 [ext_resource type="Texture2D" uid="uid://cld4y7te2vbo0" path="res://cardSlot.png" id="3_70n8d"]
+[ext_resource type="Texture2D" uid="uid://6uh3ovqgbbsc" path="res://IMG_1364.png" id="4_w3h4v"]
+[ext_resource type="Texture2D" uid="uid://8mfmq4ott43y" path="res://IMG_1365.png" id="5_q1pvb"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_prhav"]
 
@@ -55,7 +57,7 @@ mesh = SubResource("BoxMesh_8fj7m")
 transform = Transform3D(1, 0, -3.821371e-15, 3.821371e-15, 4.371139e-08, 1, 0, -1, 4.371139e-08, 0.092, 1, 0.486)
 
 [node name="PlayerCamera" parent="." unique_id=1014114674 instance=ExtResource("2_8fj7m")]
-transform = Transform3D(1, 0, 0, 0, 0.9799248, 0.19936793, 0, -0.19936796, 0.9799247, 0, 1.376, 1.0781871)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.376, 1.0781871)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1549313133]
 environment = SubResource("Environment_8fj7m")
@@ -107,3 +109,10 @@ texture = ExtResource("3_70n8d")
 
 [node name="Phand" type="Node3D" parent="." unique_id=1300204472]
 transform = Transform3D(0.02, 0, 0, 0, -8.7422775e-10, -0.02, 0, 0.02, -8.7422775e-10, 0.00037121773, 0.8977746, 1.1876822)
+
+[node name="Fingers" type="Sprite3D" parent="Phand" unique_id=1734303919]
+texture = ExtResource("4_w3h4v")
+
+[node name="Thumb" type="Sprite3D" parent="Phand" unique_id=1688681774]
+transform = Transform3D(1, 0, 0, 0, 1, -3.5527137e-15, 0, 3.5527137e-15, 1, 0, 0, 0)
+texture = ExtResource("5_q1pvb")
