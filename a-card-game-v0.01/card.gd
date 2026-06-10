@@ -8,6 +8,8 @@ var cardType
 var cardHealth
 var cardPoints
 var cardAbilities
+var isInHand = true
+var isInSlot = false
 func _ready():
 	cardData = load_json_file(dataFilePath)
 	#please ignore this fucking dogshit placeholder texture I drew in like 5 minutes

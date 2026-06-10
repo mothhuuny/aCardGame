@@ -144,6 +144,7 @@ transform = Transform3D(0.02, 0, 0, 0, 0.019810189, 0.0027488908, 0, -0.00274889
 script = ExtResource("4_5i12v")
 
 [node name="handTexture" type="Node3D" parent="Phand" unique_id=653063978]
+transform = Transform3D(1, 0, 0, 0, 1.0000001, 1.4901161e-08, 0, -1.4901161e-08, 1.0000001, 0, -2.916214, -0.40465927)
 
 [node name="thumb" type="Sprite3D" parent="Phand/handTexture" unique_id=1388670329]
 transform = Transform3D(1.4507487, 1.3767091, 0, -1.3767093, 1.4507489, 0, 1.4901161e-08, -2.9802322e-08, 2.0000002, 3.8260784, -0.96494293, 4.083435)

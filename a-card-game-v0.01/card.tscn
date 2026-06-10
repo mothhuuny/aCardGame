@@ -2,8 +2,17 @@
 
 [ext_resource type="Script" uid="uid://b125dybkijhir" path="res://card.gd" id="1_kikvd"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_kikvd"]
+size = Vector3(8.919663, 16.809155, 0.07610321)
+
 [node name="Card" type="Node3D" unique_id=1622864]
 script = ExtResource("1_kikvd")
 
 [node name="cardTexture" type="Sprite3D" parent="." unique_id=1510603347]
 transform = Transform3D(1, -8.742278e-08, -8.742278e-08, -8.742278e-08, -1, 0, -8.742278e-08, 7.642742e-15, -1, 0, 0, 0)
+
+[node name="cardHitbox" type="Area3D" parent="." unique_id=1206493338]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="cardHitbox" unique_id=245257257]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.023291111, 0.19918823, -0.13466263)
+shape = SubResource("BoxShape3D_kikvd")
