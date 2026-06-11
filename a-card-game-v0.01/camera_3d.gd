@@ -10,7 +10,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-func _unhandled_input(event: InputEvent) -> void:
+func _input(event: InputEvent) -> void:
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 		shoot_ray_from_mouse(event.position)
 
@@ -27,5 +27,4 @@ func shoot_ray_from_mouse(mouse_position: Vector2) -> void:
 	var result: Dictionary = space_state.intersect_ray(query)
 	
 	if not result.is_empty():
-		print("Clicked object: ", result.collider.name)
 		pRowHit.emit(result.collider)
